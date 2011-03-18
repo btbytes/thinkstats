@@ -1,2 +1,3 @@
 data/*.gz
 data/*.dat
+*.pyc

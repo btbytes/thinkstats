@@ -1,4 +1,9 @@
-Journal
-=======
+#Journal
 
-These are my notes on the "Think Stats"
+These are my notes on the "Think Stats".
+
+### 2011-03-18
+
+Started reading [the book](http://www.greenteapress.com/thinkstats/thinkstats.pdf).
+
+
