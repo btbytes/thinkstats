@@ -1,0 +1,4 @@
+Journal
+=======
+
+These are my notes on the "Think Stats"
