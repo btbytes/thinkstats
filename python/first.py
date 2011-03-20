@@ -52,7 +52,7 @@ def other_babies():
 
 
 def avg_pregnancy_length(group):
-    vals = [b.agepreg for b in group]
+    vals = [b.prglength for b in group]
     return float(sum(vals)) / len(vals)
 
 
@@ -68,11 +68,8 @@ def main(name, data_dir="../data"):
     print('Average Preg. Length for first babies: ', apl_fb)
     apl_nfb = avg_pregnancy_length(other_babies())
     print('Average Preg. Length for non-first babies: ', apl_nfb)
-    print("Contrary to popular anecdotes, first borns are on the average 3.6 \
-    weeks earlier than non-first-borns")
-    print("However should we consider only those first borns who have younger \
-    siblings?\n")
-
+    print('Diff in gestation period bn first and non-first-borns: %.2f hours' \
+          % (24 * 7 * (0.6 - 0.52), ))
 
 if __name__ == '__main__':
     main(*sys.argv)
