@@ -1,9 +1,11 @@
 #!/usr/bin/env python3.2
 
 import sys
+import functools
 import survey
 
 
+@functools.lru_cache(maxsize=10)
 def num_pregs(data_dir="../data"):
     '''
     >>> print(num_pregs())
@@ -14,6 +16,7 @@ def num_pregs(data_dir="../data"):
     return len(table.records)
 
 
+@functools.lru_cache(maxsize=10)
 def live_births(data_dir="../data"):
     '''
     http://nsfg.icpsr.umich.edu/cocoon/WebDocs/NSFG/public/preg--303-1158-var
@@ -26,6 +29,7 @@ def live_births(data_dir="../data"):
     return lb
 
 
+@functools.lru_cache(maxsize=10)
 def first_babies():
     '''
     how many first babies?
@@ -36,6 +40,7 @@ def first_babies():
     return [fb for fb in live_births() if fb.birthord == 1]
 
 
+@functools.lru_cache(maxsize=10)
 def other_babies():
     '''
     non-first-borns

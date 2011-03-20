@@ -6,4 +6,10 @@ These are my notes on the "Think Stats".
 
 Started reading [the book](http://www.greenteapress.com/thinkstats/thinkstats.pdf).
 
+### 2011-03-20
+
+* finished chap1/ex3
+* started using doctests
+* converted code to python3.2
+* added `functools.lru_cache` to memoize expensive calculations.
 
