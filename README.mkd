@@ -1,3 +1,8 @@
 # Think Stats
 
 Notes on [Thik Stats](http://www.greenteapress.com/thinkstats/).
+
+
+## Quick Links
+
+* [Online documenation of the survey](nsfg.icpsr.umich.edu/cocoon/WebDocs/NSFG/public/index.htm)
